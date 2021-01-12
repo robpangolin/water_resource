@@ -135,8 +135,8 @@
             "is_objective": "minimise"
         },
         "total_cost": {
-            "type": "ParameterRecorder",
-            "parameter": "Max_vol",
+            "type": "NumpyArrayNodeRecorder",
+            "node": "reservoir1",
             "is_objective": "minimise"
         }
     }
