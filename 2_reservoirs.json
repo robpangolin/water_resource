@@ -115,7 +115,9 @@
         },
         "Max_vol": {
             "type": "constant",
-            "value": 4,
+            "value": 5,
+            "lower_bounds": 0,
+            "upper_bounds": 100,
             "is_variable": true
         }
     },
@@ -134,10 +136,12 @@
             "recorder_agg_func": "sum",
             "is_objective": "minimise"
         },
-        "total_cost": {
-            "type": "ParameterRecorder",
+        "__reservoir_:capex": {
+            "type": "MeanParameterRecorder",
             "parameter": "Max_vol",
+            "factor": 9982,
+            "comment": "annualised cost units [$/hm^3]",
             "is_objective": "minimise"
-        }
+            }
     }
 }
