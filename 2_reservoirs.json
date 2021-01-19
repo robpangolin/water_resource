@@ -103,7 +103,7 @@
         },
         "flow_cumecs": {
               "type": "dataframe",
-              "url": "https://github.com/pywr/pywr/blob/master/examples/data/thames_stochastic_flow.gz?raw=true",
+              "url": "https://raw.githubusercontent.com/pywr/pywr/master/examples/data/thames_stochastic_flow.gz",
               "column": "flow",
               "index_col": "Date",
               "parse_dates": true
